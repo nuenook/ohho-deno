@@ -2,6 +2,8 @@ import { Application, Context } from "https://deno.land/x/abc@v1/mod.ts";
 
 const app = new Application()
 
+/** Static files */
+app.static('/', './public')
 
 // routes
 app.get('/', async (ctx: Context) => {
